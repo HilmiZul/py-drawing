@@ -9,13 +9,15 @@ form.title("Menggambar")
 kanvas = Canvas(form, width=lebar, height=tinggi, bg="#fff")
 kanvas.pack()
 
+# func. untuk membuat shape
 def buat_lingkaran(koord, warna):
   kanvas.create_oval(koord, fill=warna)
 
 def buat_persegi(koord, warna):
   kanvas.create_rectangle(koord, fill=warna)
 
-# input koordinat
+# input koordinat dengan looping
+# buat shape sebanyak sesuka hati :)
 gambar = True
 while gambar:
   print "[1] Lingkaran"
